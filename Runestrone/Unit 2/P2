@@ -18,3 +18,98 @@ or when first in or is true.
 *For && both should be true (outcome true)
 
 * ! means "not" basically
+
+
+
+2.6
+
+De Morgan's Law SUmmary
+
+2 Most Crucial Principles
+
+* !(x&&y)=!(x) or !(y)
+-instead && it can be or aswell but then you switch them-
+
+*and for example when !(x<10) is getting rid of !:
+the symbol is filpped and added = like =>
+
+for == it becomes !=
+
+
+
+
+-For Strings usually use equals command.
+
+
+Note:Consider if theyre created with new Srtring for example their references different/connected to different places (Maybe for == not being used)
+
+== or =! and such used for primitives.
+
+equals for developeds/Strings (To check letter for letter
+
+İf use == instead equals it may check reference etc maybe.
+
+
+
+
+*****More details about == null*****
+
+
+quote from the summary in the runestone app "(AP 2.6.B.2) An object reference can be compared with null, using == or !=, to determine if the reference actually references an object."
+
+
+
+
+2.7 While loops
+İterating as long as the contition is true, if false it ends/SKİPPED
+
+Repeat may work "until"
+While works "as long as" kinda
+
+
+* Loop control variable
+  - ones that you enter in the loop
+  -maybe increase after each turn of if conition fulled and such
+
+qouete from the actual
+"Note 2.7.5.
+Remember these 3 steps to writing a loop:
+Initialize the loop variable (before the while loop)
+Test the loop variable (in the loop header)
+Update the loop variable (in the while loop body at the end)"
+
+
+
+**Use of Trascing tables**
+*no. of iterations
+**value of variables
+
+
+
+Errors:
+Making it infini,te (always true)
+
+Another Qoute "Another common error with loops is an off-by-one error where the loop runs one too many or one too few times. This is usually a problem with step 2 the test condition and using the incorrect relational operator < or <=."
+
+It never running (the condition always false
+
+
+Important section bellow from the original
+
+"2.7.4 Input-Controlled Loops
+You can use a while loop to repeat the body of the loop a certain number of times in counter-controlled loop as we saw above. However, a while loop is typically used when you don’t know how many times the loop will execute. It is often used for a input-controlled loop where the user’s input indicates when to stop. For example, in the Magpie chatbot lab code below, the while loop stops when you type in “Bye”. The stopping value is often called the sentinel value for the loop. Notice that if you type in “Bye” right away, the loop will never run. If the loop condition evaluates to false initially, the loop body is not executed at all. Another way to stop the loop prematurely is to put in a return statement that makes it immediately return from the method.
+Scanner in = new Scanner(System.in);
+String statement = in.nextLine();
+while (!statement.equals("Bye"))
+{
+    System.out.println(getResponse(statement));
+    statement = in.nextLine();
+}"
+
+
+qoute from the summary regarding an rerror type
+"(AP 2.7.A.4) Off by one errors occur when the iteration statement loops one time too many or one time too few."
+
+
+
+
