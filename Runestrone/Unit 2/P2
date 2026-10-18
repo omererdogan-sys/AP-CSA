@@ -1,0 +1,20 @@
+It was briefly about && or !.
+
+* ! checked first
+
+* then &&
+
+*then or
+
+*It checks only 1st one if it can.
+
+eg. in && if first is false doesnt check second as result false
+
+or when first in or is true.
+
+
+* or can work when either or both is true (outcome true)
+
+*For && both should be true (outcome true)
+
+* ! means "not" basically
