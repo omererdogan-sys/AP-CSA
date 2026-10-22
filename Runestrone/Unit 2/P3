@@ -1,0 +1,25 @@
+For Loops
+
+Like a while loop but you place the variable inside
+
+Setting it up there is 3 main things
+
+*first put variable like int num=1
+
+*then put a condition-->Think like boolean but can be many thing related to num
+
+*then put a change in num
+
+So for example when the condition in num isfulfilled the thinf in part 3 happnes
+
+/////////////PUT ; INBETWEEN EACH PAT
+/////////////And ALL IN ()
+
+
+Example form the text:"For example, for (int i=5; i > 0; i--) counts from 5 down to 1."
+
+And then iit works until that boolean is false
+
+
+Can correspond to a while loop outcome
+
