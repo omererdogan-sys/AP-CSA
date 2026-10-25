@@ -1,0 +1,71 @@
+Interesting: accumulation patern
+4 steps: "
+Initialize the accumulator variable before the loop.
+Loop through the values.
+Update the accumulator variable inside the loop.
+Print or use the accumulated value when the loop is done."
+fromthe thing
+
+example: "int sum = 0;
+for (int i = 1; i <= 100; i++)
+{
+    sum += i;
+}
+System.out.println("The sum of 1 through 100 is " + sum);"
+1-100 all combined
+
+important part from the text:::::::::::::::::::
+
+2.9.5 Finding Digits with / and %
+We can also use division (/) and remainder (%) to find the digits of a number by dividing by 10. For example, 1234 divided by 10 is 123 with a remainder of 4. Remember that in integer division the result truncates (cuts off) everything to the right of the decimal point, so we get the number without the last digit when we divide by 10. The remainder is the last digit of the number. You could use this algorithm to add the digits of a number, reverse the digits of a number, or check if a digit is equal to a certain number, etc.
+Note:x%z==0 if true  x divisiple by z
+
+
+
+Math.random()
+Checking rates/chances
+
+
+regarding Frequency:::::
+You can use a counter variable inside a loop to determine the frequency with which a specific criteria is met. For example, you can count the number of even numbers in a sequence of numbers. You can use a loop and increment the counter each time an even number is found like below:
+int count = 0;
+for (int i = 0; i < 100; i++)
+{
+    if (i % 2 == 0)
+    {
+        count++;
+    }
+}
+System.out.println("There are " + count + " even numbers from 1 to 100.");
+content_copy
+The AP exam often gives a boolean method for students to use to determine some criteria in a set of values. For example, in the following challenge, you can count the number of prime numbers from 1 to 100 given a boolean method to use isPrime(n) which returns true or false.
+
+
+
+2.10 references
+quote 
+int length() : returns the number of characters in a String object.
+int indexOf(String str) : returns the index of the first occurrence of str or -1 if str is not found.
+String substring(int from, int to) : returns the substring beginning at index from and ending at index (to – 1). Note that s.substring(i,i+1) returns the character at index i.
+String substring(int from) : returns substring(from, length()).
+
+
+
+
+MAY HELP TOMORROWS LESSOM String s = "example";
+int i = 0;
+// while there is an a in s
+while (s.indexOf("a") >= 0)
+{
+  // Find and save the next index for an a
+  i = s.indexOf("a");
+  // Process the string at that index
+  String ithLetter = s.substring(i,i+1);
+  ...
+}
+
+
+
+
+
+
