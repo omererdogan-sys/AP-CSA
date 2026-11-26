@@ -1,0 +1,94 @@
+//public class Bike tester {
+//    public static void main(String[] args) {
+ //       Bike best = trek.moreGears(city);
+//        best.repair();
+  //      System.out.println(trek);
+       // System.out.println(trek.wear); //Used in error messege
+        
+        //error messege:MyProgram.java:3: error: ';' expected
+   // public static final int MAX_WEAR=100
+    //                                    ^
+//MyProgram.java:50: error: illegal start of expression
+      //  private int swapper; //Define the local variable?
+  //      ^
+//MyProgram.java:51: error: <identifier> expected
+//        swapper=other.Bike.getWear; //Swapping process start
+  //             ^
+//MyProgram.java:52: error: <identifier> expected
+//        other.Bike.setWear(this.Bike.getWear);
+  //                        ^
+//MyProgram.java:52: error: illegal start of type
+  //      other.Bike.setWear(this.Bike.getWear);
+   //                        ^
+//MyProgram.java:52: error: wrong receiver parameter name
+//        other.Bike.setWear(this.Bike.getWear);
+                                            ^
+//MyProgram.java:53: error: illegal start of type
+//        this.Bike.setWear(swapper);
+   //     ^
+//MyProgram.java:53: error: ';' expected
+  //      this.Bike.setWear(swapper);
+//            ^
+//MyProgram.java:53: error: <identifier> expected
+ //       this.Bike.setWear(swapper);
+ //                        ^
+//MyProgram.java:53: error: <identifier> expected
+ //       this.Bike.setWear(swapper);
+ //                                ^
+//MyProgram.java:62: error: unnamed classes are a preview feature and are disabled by default.
+ //   public String wearReport() {
+           ^
+//  (use --enable-preview to enable unnamed classes)
+//11 errors
+ //   }
+//}
+
+
+
+
+
+
+//wear is private. setWear clamps the value. What does this protect?
+//So other random classes cannot change the wear. maybe that.
+//You add a new private field color. Why does BikeTester not need to change?
+//The color maybe can be self setted, or it can use thing like null potantially? I am not sure
+//A bike-sharing app shows wrong wear data to riders. What could go wrong? Who is hurt?
+//Widespread misunderstanding which may also affect their recorded wears, so at getWear may return wrong things. and the users may be hurt.
+
+
+//Full tester
+public class BikeTester {
+public static void main(String[] args) {
+Bike trek = new Bike("Trek", 21);
+Bike city = new Bike("City");
+Bike blank = new Bike();
+System.out.println(trek);
+System.out.println(city);
+System.out.println(blank);
+trek.ride(300);
+city.ride(55);
+System.out.println(trek.getWear());
+System.out.println(city.getWear());
+trek.swapWear(city);
+System.out.println(trek);
+System.out.println(city);
+Bike best = trek.moreGears(city);
+best.repair();
+System.out.println(trek);
+blank.setWear(500);
+System.out.println(blank.getWear());
+System.out.println(blank.canRide());
+System.out.println(city.wearReport());
+System.out.println(Bike.getBikeCount());
+}
+}
+
+//Outcome--> Tester Failed or couldnt really start because of errors...
+
+
+
+
+
+
+
+
