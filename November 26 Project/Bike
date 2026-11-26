@@ -1,0 +1,79 @@
+public class Bike
+{
+    public static final int MAX_WEAR=100;
+    private static int bikeCount=0;
+    private String name;
+    private int gears;
+    private int wear;
+    
+    public Bike(String name, int gears){ //Main definer
+        this.name=name;
+        this.gears=gears;
+        bikeCount++;
+    }
+    public Bike(String name){ //Helps fefine
+        this("name", 1); //refer to main definer
+    }
+    public Bike(){//Helps fefine
+        this("Bike", 1);//refer to main definer
+    }
+    
+    public String getName(){ //Returns the name of the object
+        return name;
+    }
+    public int getGears(){  //Used to get how many wears a bike has
+        return gears;
+    }
+    public int getWear(){ //Used to get how many wears a bike has
+        return wear; 
+    }
+    public void setWear(int wear){
+        if (wear<0){
+            this.wear=0; //sets to 0 if wanted less than 0
+        }
+        if (wear<MAX_WEAR){
+            this.wear=MAX_WEAR; //sets wear to max if more than max
+        }
+        else{
+            this.wear=wear; //The norm part
+        }
+    }
+    public Bike moreGears(Bike other) { //This part was tricky/not sure did somethings
+        if (this.Bike.getGears()>other.Bike.getGears()){
+            return this.Bike;
+        }
+        else{
+            return other.Bike;
+        }
+    }
+    public void swapWear(Bike other) { //Used to swap wears
+        private int swapper; //Define the local variable?
+        swapper=other.Bike.getWear; //Swapping process start
+        other.Bike.setWear(this.Bike.getWear);
+        this.Bike.setWear(swapper);
+    }
+    
+// Bike best = trek.moreGears(city);
+   // best.repair();
+    //System.out.println(trek);
+    
+//My guess this would print wrong because there is no toString, but if there was it  would be more complete didnt run because of general syntax
+
+    public String wearReport() {
+        if (wear >= 50) {
+            String report = "Worn";
+    }
+        return report;
+    }
+    
+    //I do not understand why return cannot reach report, maybe because it wasnt specifically made public but theyre the same EVEN METHOD so I dont know.
+    
+    public static int getBikeCount() {
+        return bikeCount; //Question B: WHy cannot use name? I dont understand that question. but maybe because it doesnt need to. it instead uses a static integer. nor related to name. is generaler. Now thinking its because its static.
+    }
+    
+    
+    
+    
+    
+    
